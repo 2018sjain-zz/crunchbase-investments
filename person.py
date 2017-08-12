@@ -33,7 +33,7 @@ class Person:
 		try:	
 			first_name = data_person['data']['properties']['first_name']
 			last_name = data_person['data']['properties']['last_name']
-			name = first_name + last_name
+			name = first_name + " " + last_name
 		except (KeyError, TypeError) as e:
 			pass
 		location = ""
